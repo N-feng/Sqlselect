@@ -1,0 +1,11 @@
+# sqlselect.js
+
+## Intro
+
+```
+sqlselect  一个简单的模拟sql的插件
+```
+
+## Example
+
+**Visit the [demo page](https://n-feng.github.io/Editbutton/)**

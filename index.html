@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/baseboostrap.css">
+	<style type="text/css">
+		body {
+			margin: 100px;
+		}
+		textarea.form-control {
+			height: auto;
+			width: 83.33333%;
+		}
+	</style>
+</head>
+<body>
+	<div class="row">
+		<div class="col-sm-10">
+			<textarea class="J-sqlselect form-control"></textarea>
+		</div>
+	</div>
+		
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/sqlselect.js"></script>
+	<script>
+		$(function () {
+			var activityField = ["activityId","addition","age","amount","available","birthday","campaign","clickCount","client","cookie_51la","count","createTime","eClick","email","eOpen","existence","existenceProject","id","importCount","income","interface","interfaceData","interfaceReturn","interfaceTime","invitation","ip","ipArea","ipCityId","ipProvinceId","isPc","lastImportTime","mobile","mobileCityId","mobileProvinceId","mobileType","name","os","policyno","puid","question1","question2","question3","referer","sendTaskId","settlement","settlement_time","sex","skipActivityId","skipPuid","src","stoptime","subsidy","template","total","unsubscribe","unsubscribeTime","updateTime","userCityId","userProvinceId","voice_durationTime","voice_status","way"];
+			$('.J-sqlselect').sqlselect({
+				fieldName: activityField
+			});
+		});
+	</script>
+</body>
+</html>
